@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wing Bank</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#2E2F30] min-h-screen">
+
+  <nav class="w-full px-4 xl:px-0 py-2 fixed z-50 text-white bg-[#2E2F30]">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 lg:px-6 py-3 lg:py-4">
+
+    <div class="flex items-center space-x-6 lg:space-x-12">
+      <img src="/asset/wb-logo.svg" alt="logo" class="h-[40px] md:h-[50px]">
+
+      <ul class="hidden lg:flex space-x-8 font-sans text-[16px]">
+        <li><a href="#" class="hover:underline">For Individuals</a></li>
+        <li><a href="#" class="hover:underline">Business</a></li>
+        <li><a href="#" class="hover:underline">Company</a></li>
+      </ul>
+    </div>
+
+    <div class="flex items-center space-x-4">
+
+      <img src="/asset/translate-dark-en.svg" class="h-[32px] md:h-[40px] hidden sm:block">
+
+      <button class="hidden lg:block rounded-2xl bg-blue-600 px-6 py-2 text-black">
+        Internet Banking
+      </button>
+
+      <button id="menu-toggle" class="lg:hidden text-white text-2xl focus:outline-none">
+        ☰
+      </button>
+    </div>
+
+  </div>
+
+  <div id="mobile-menu" class="hidden lg:hidden bg-[#2E2F30] px-6 pt-2 pb-4">
+    <ul class="flex flex-col space-y-4 font-sans text-[16px]">
+      <li><a href="#" class="hover:underline">For Individuals</a></li>
+      <li><a href="#" class="hover:underline">Business</a></li>
+      <li><a href="#" class="hover:underline">Company</a></li>
+      <li>
+        <button class="w-full rounded-2xl bg-blue-600 px-6 py-2 text-black">
+          Internet Banking
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<section class="pt-24 px-6 text-white text-center mx-auto font-sans font-semibold leading-tight">
+  <h1 class="pt-4 text-[28px] sm:text-[36px] md:text-[48px] lg:text-[56px]">
+    Digital Banking for Every Cambodian.
+  </h1>
+  <h2 class="pt-4 text-[20px] sm:text-[24px] md:text-[32px] lg:text-[40px]">
+    Smart services. Get instant help. All in one app,
+  </h2>
+  <h3 class="pt-4 text-[20px] sm:text-[24px] md:text-[32px] lg:text-[40px]">
+    built for you.
+  </h3>
+</section>
+
+<section class="grid grid-cols-2 md:grid-cols-4 place-items-center gap-10 pt-12 px-6 sm:px-12 md:px-20 lg:px-32 xl:px-40 max-w-8xl mx-auto">
+
+  <div class="flex flex-col items-center space-y-3">
+    <img src="/asset/bn-icon4.png" alt="Wing Bank app icon"
+      class="h-[120px] sm:h-[160px] md:h-[180px] lg:h-[200px]">
+    <button class="text-white text-md font-medium px-4 py-1 rounded-2xl bg-[#18181A]">
+      Wing Bank app
+    </button>
+  </div>
+
+  <div class="flex flex-col items-center space-y-3">
+    <img src="/asset/bn-icon2.png" alt="Latest news icon"
+      class="h-[120px] sm:h-[160px] md:h-[180px] lg:h-[200px]">
+    <button class="text-white text-md font-medium px-4 py-1 rounded-2xl bg-[#18181A]">
+      Latest news
+    </button>
+  </div>
+
+  <div class="flex flex-col items-center space-y-3">
+    <img src="/asset/coin1.png" alt="Self Service icon"
+      class="h-[120px] sm:h-[160px] md:h-[180px] lg:h-[200px]">
+    <button class="text-white text-md font-medium px-4 py-1 rounded-2xl bg-[#18181A]">
+      Self Service
+    </button>
+  </div>
+
+  <div class="flex flex-col items-center space-y-3">
+    <img src="/asset/bn-icon3.png" alt="24/7 support icon"
+      class="h-[120px] sm:h-[160px] md:h-[180px] lg:h-[200px]">
+    <button class="text-white text-md font-medium px-4 py-1 rounded-2xl bg-[#18181A]">
+      24/7 support
+    </button>
+  </div>
+
+</section>
+
+<section class="pt-8 px-6 mx-auto text-center max-w-7xl">
+  <p class="text-white text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] pb-16 leading-relaxed">
+    Wing Bank – The Bank for Every Cambodian Since 2008. Wing Bank has transformed how Cambodians access and...
+  </p>
+</section>
+
+  <section class="bg-black min-h-screen text-white text-center">
+    <h1 class="text-white font-sans text-[56px] md:text-6xl font-semibold pt-8">
+      Explore all our financial solutions for a smart <br> financial future.
+    </h1>
+
+    <p class="pt-8 text-[20px] font-sans max-w-7xl mx-auto">
+      Explore our full suite of products, designed to help you save...
+    </p>
+
+    <div class="py-16 max-w-7xl mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+        <div class="relative w-full rounded-2xl overflow-hidden bg-green-500">
+          <img src="/asset/digital-loan.png" class="w-full h-full object-cover">
+          <span class="absolute top-4 left-1/2 -translate-x-1/2 text-white text-xl font-bold">Digital Loan</span>
+        </div>
+
+        <div class="relative w-full rounded-2xl overflow-hidden bg-[#0A162B]">
+          <img src="/asset/term-deposit.png" class="w-full h-full object-cover">
+          <span class="absolute top-4 left-1/2 -translate-x-1/2 text-white text-xl font-bold">Term Deposit</span>
+        </div>
+
+        <div class="relative w-full rounded-2xl overflow-hidden bg-green-500">
+          <img src="/asset/saving-goal.png" class="w-full h-full object-cover">
+          <span class="absolute top-4 left-1/2 -translate-x-1/2 text-white text-xl font-bold">Saving Goal</span>
+        </div>
+
+        <div class="relative w-full rounded-2xl overflow-hidden bg-blue-500">
+          <img src="/asset/choose-offer.png" class="w-full h-full object-cover">
+          <span class="absolute top-4 left-1/2 -translate-x-1/2 text-white text-xl font-bold">Choose Your Offers</span>
+        </div>
+
+        <div class="relative w-full rounded-2xl overflow-hidden bg-blue-500">
+          <img src="/asset/wing-point.png" class="w-full h-full object-cover">
+          <span class="absolute top-4 left-1/2 -translate-x-1/2 text-white text-xl font-bold">Wingpoints</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <section class="bg-[#2E2F30] min-h-screen text-center px-4 sm:px-6">
+
+  <h1 class="text-white font-semibold leading-tight pt-12
+      text-[24px] sm:text-[30px] md:text-[44px] lg:text-[56px]">
+    <span class="block mb-2 sm:mb-3">"Wing Bank app is one of</span>
+    <span class="block mb-2 sm:mb-3">the most useful apps on your phone with</span>
+    <span class="block">many features."</span>
+  </h1>
+
+  <div class="py-10 sm:py-12 md:py-16 flex flex-col items-center">
+
+    <div class="grid 
+        grid-cols-2 sm:grid-cols-2       <!-- Mobile: 2 per row → 2 rows total -->
+        md:grid-cols-3                   <!-- Tablet: 3 per row -->
+        gap-4 sm:gap-6 md:gap-6
+        mb-6 px-2 sm:px-4">
+
+      <div class="bg-[#18181A] p-3 sm:p-4 rounded-xl shadow text-center w-full max-w-[150px] sm:max-w-[180px]">
+        <img src="/asset/profile_icon.svg" class="mx-auto h-10 sm:h-12">
+        <h1 class="text-[#98c20a] font-bold pt-2 
+            text-[36px] sm:text-[44px] md:text-[56px] whitespace-nowrap">4.4M</h1>
+        <p class="text-white text-[12px] sm:text-sm">Author's Choice on <br> the App Store</p>
+      </div>
+
+      <div class="bg-[#18181A] p-3 sm:p-4 rounded-xl shadow text-center w-full max-w-[150px] sm:max-w-[180px]">
+        <img src="/asset/apple_app_store.svg" class="mx-auto h-10 sm:h-12 dark:invert">
+        <h1 class="text-[#98c20a] font-bold pt-2
+            text-[36px] sm:text-[44px] md:text-[56px] whitespace-nowrap">11.7k+</h1>
+        <p class="text-white text-[12px] sm:text-sm">Apple App Store <br> reviews</p>
+      </div>
+
+      <div class="bg-[#18181A] p-3 sm:p-4 rounded-xl shadow text-center w-full max-w-[150px] sm:max-w-[180px]">
+        <img src="/asset/google_play_store.svg" class="mx-auto h-10 sm:h-12 dark:invert">
+        <h1 class="text-[#98c20a] font-bold pt-2
+            text-[36px] sm:text-[44px] md:text-[56px] whitespace-nowrap">101k+</h1>
+        <p class="text-white text-[12px] sm:text-sm">Google Play Store <br> reviews</p>
+      </div>
+
+    </div>
+
+    <button class="rounded-2xl bg-blue-600 text-black font-medium mt-6
+        px-10 sm:px-14 md:px-16
+        py-2 sm:py-3 md:py-3
+        text-[14px] sm:text-[16px] md:text-lg">
+      Know more
+    </button>
+  </div>
+
+</section>
+
+
+  <section class="relative bg-[#2E2F30] py-12 min-h-screen bg-section-map">
+    <div class="w-full xl:w-[1280px] m-auto pt-0 ">
+
+      <div class="text-center relative overflow-hidden">
+        <h5 class="text-white text-xl font-bold">What makes us more unique?</h5>
+
+        <h1 class="text-white text-3xl md:text-5xl font-bold py-6">
+            <span class="block mb-4">Seamless money transfers: from domestic to</span>
+            <span class="block mb-4">international – borderless banking!</span>
+        </h1>
+        <div class="bg-blue-600 text-white h-[50px] w-[200px] mx-auto flex items-center justify-center rounded-xl px-4 mb-10">
+          <a href="" class="text-black">Transfer money now</a>
+        </div>
+
+        <div class="xl:hidden block">
+          <img src="/asset/day_mode_map.png" class="w-full dark:hidden">
+          <img src="/asset/dark_mode_map.png" class="w-full hidden dark:block">
+        </div>
+
+        <div class="hidden xl:block mt-10 relative">
+          <img src="/asset/world.png" class="w-1/2 mx-auto">
+
+          <img src="/asset/paper-ap1.png" class="absolute top-[24%] right-[50%] h-[90px] slide-br" />
+          <img src="/asset/paper-ap1.png" class="absolute top-[44%] right-[40%] h-[60px] slide-bl" />
+          <img src="/asset/paper-ap1.png" class="absolute top-[45%] left-[20%] h-[60px] slide-br" />
+          <img src="/asset/paper-ap1.png" class="absolute top-[50%] right-[20%] h-[60px] slide-bl" />
+          <img src="/asset/paper-ap1.png" class="absolute bottom-[25%] left-[20%] h-[70px] slide-br" />
+          <img src="/asset/paper-ap1.png" class="absolute bottom-[20%] right-[25%] h-[70px] slide-bl" />
+        </div>
+      </div>
+
+      <div class="flex flex-wrap lg:flex-nowrap items-center">
+        <div class="w-full lg:w-[70%]">
+          <div class="text-center mb-12 xl:mb-0">
+            <p class="text-white text-5xl font-bold mb-12">
+              Financial services for everyone, everywhere
+            </p>
+            <p class="text-gray-400">International money transfers to over 165 countries.</p>
+            <p class="text-gray-400">Trusted for over 10 years in Cambodia and around the world.</p>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-[30%] px-12 lg:px-0">
+          <img src="/asset/transaction-light.png" class="block dark:hidden">
+          <img src="/asset/transaction-dark.png" class="hidden dark:block">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="relative bg-black py-12">
+    <div class="w-full xl:w-[1280px] m-auto">
+
+      <video class="m-auto w-full lg:w-[70%]" autoplay muted loop playsinline preload="auto">
+        <source src="/asset/security.webm" type="video/webm">
+      </video>
+
+      <div class="text-center px-4 lg:px-0 mb-6">
+        <p class="text-6xl text-white font-bold mb-6">Your safety is our top priority.</p>
+        <p class="text-white">
+          At Wing Bank, we use industry-leading security measures...
+        </p>
+      </div>
+
+      <div class="bg-blue-600 text-white h-[50px] w-[200px] m-auto flex items-center justify-center rounded-xl px-4 mb-4">
+        <a href="/km/personal/cards/card-security-awareness">Know more</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="relative bg-[#18181A] py-16">
+    <div class="swiper quick-read-swiper px-4 swiper-initialized">
+
+      <div class="swiper-wrapper">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+
+          <div class="space-y-8">
+            <h3 class="text-white font-bold text-3xl text-center">
+              Solutions for all your financial needs
+            </h3>
+
+            <p class="text-gray-400 text-lg text-center">How can I help you?</p>
+
+            <div class="flex items-start gap-6">
+              <div class="w-1/2">
+                <span class="text-white text-2xl font-semibold">I want to understand.</span>
+              </div>
+
+              <div class="w-1/2">
+                <ul class="space-y-3">
+                  <li><span class="block text-blue-500 text-xl font-semibold cursor-pointer">Promotion</span></li>
+                  <li><span class="block text-white hover:text-blue-500 text-lg cursor-pointer">Latest news</span></li>
+                  <li><span class="block text-white hover:text-blue-500 text-lg cursor-pointer">Wing for the community</span></li>
+                </ul>
+              </div>
+            </div>
+
+            <button class="bg-blue-600 hover:bg-blue-700 text-white w-[200px] h-[50px] rounded-xl mx-auto flex items-center justify-center font-medium">
+              See more
+            </button>
+          </div>
+
+          <div class="bg-[#2E2F30] flex flex-col p-4 rounded-3xl">
+
+            <div class="flex items-center justify-center h-auto lg:h-[350px] overflow-hidden rounded-2xl">
+              <img src="/asset/WebPTULuckyDraw_Khmer3_1763958088.jpg">
+            </div>
+
+            <div class="mt-4">
+              <p class="text-gray-300 text-xl font-bold">⚡ QUICK READ</p>
+              <h4 class="mt-2 text-2xl font-bold text-gray-300">Top up & win an iPhone 17 Pro Max!</h4>
+
+              <div class="flex items-center justify-between mt-3">
+                <p class="text-gray-300 text-xl font-bold">Nov 24, 2025</p>
+
+                <button class="bg-white dark:bg-wing-L300 flex items-center justify-center w-[50px] h-[50px] rounded-full">
+                  <i class="fa-solid fa-plus text-black"></i>
+                </button>
+              </div>            
+            </div>
+          </div>
+
+          <div class="bg-[#2E2F30] flex flex-col p-4 rounded-3xl">
+
+            <div class="flex items-center justify-center h-auto lg:h-[350px] overflow-hidden rounded-2xl">
+              <img src="/asset/IMTChinacopy2_1763973873.jpg">
+            </div>
+
+            <div class="mt-4">
+              <p class="text-gray-300 text-xl font-bold">⚡ QUICK READ</p>
+
+              <h4 class="mt-2 text-2xl font-bold text-gray-300">
+                Transfer money to China via Weixin & get $5 cashback!
+              </h4>
+
+              <div class="flex items-center justify-between mt-3">
+                <p class="text-gray-300 text-xl font-bold">Nov 14, 2025</p>
+
+                <button class="bg-white dark:bg-wing-L300 flex items-center justify-center w-[50px] h-[50px] rounded-full">
+                  <i class="fa-solid fa-plus text-black"></i>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+ <section class="pb-12 bg-[#18181A]">
+  <div class="container mx-auto text-center">
+    <h1 class="font-bold text-5xl text-white mb-14">Wing Bank in the press</h1>
+    <div class="flex flex-wrap justify-center items-center gap-6">
+      <img src="/asset/sponsor/press-1.png" alt="" class="grayscale max-h-16">
+      <img src="/asset/sponsor/press-2.png" alt="" class="grayscale max-h-16">
+      <img src="/asset/sponsor/press-3.png" alt="" class="grayscale max-h-16">
+      <img src="/asset/sponsor/press-4.png" alt="" class="grayscale max-h-16">
+      <img src="/asset/sponsor/press-5.png" alt="" class="grayscale max-h-16">
+      <img src="/asset/sponsor/press-6.png" alt="" class="grayscale max-h-16">
+      <img src="/asset/sponsor/press-7.png" alt="" class="grayscale max-h-16">
+      <img src="/asset/sponsor/press-8.png" alt="" class="grayscale max-h-16">
+      <img src="/asset/sponsor/press-9.png" alt="" class="grayscale max-h-16">
+      <img src="/asset/sponsor/press-10.png" alt="" class="grayscale max-h-16">
+      <img src="/asset/sponsor/press-11.png" alt="" class="grayscale max-h-16">
+      <img src="/asset/sponsor/press-12.png" alt="" class="grayscale max-h-16">
+
+    </div>
+  </div>
+</section>
+<section class="bg-[#2E2F30]">
+  <div class="items-center mt-10">
+    <h1 class="text-white text-5xl font-bold text-center mb-10">Join millions of Cambodians who are enjoying 
+      <br> the faster and easier bank experience!
+    </h1>
+    <p class="text-white text-center mb-10">Digital banking for Cambodian - simplifying your daily life</p>
+      <button class="bg-blue-600 hover:bg-blue-700 text-black w-[200px] h-[50px] rounded-xl mx-auto flex items-center justify-center font-medium">
+              Know more
+      </button>
+  </div>
+  <div class="flex justify-between overflow-hidden">
+    <div class="w-1/2">
+      <img src="/asset/coin2.png" alt="" class="rotate-coin rotate-in-diag-1">
+    </div>
+    <div class="w-1/2 relative">
+      <img src="/asset/footer-right.png" alt="" class="foot-appear-right ml-auto h-[500px] tilt-in-br">
+      <img src="/asset/b-coin2.png" alt="" class="rotate-coin absolute top-0 right-[30px] rotate-in-diag-1">
+      <img src="/asset/b-coin3.png" alt="" class="rotate-coin absolute top-[50px] right-[450px] hidden md:hidden lg:block rotate-in-diag-1">
+      <img src="/asset/b-coin1.png" alt="" class="rotate-coin absolute bottom-[110px] right-[280px] rotate-in-diag-1">
+    </div>
+  </div>
+
+   </div>
+</section>
+<div class="bg-repeat-x bg-contain w-full h-[70px]" style="background-image: url('/asset/bg-pattern.svg') "></div>
+<footer class="bg-[#2E2F30] text-white pt-10 pb-6 px-4 sm:px-6">
+
+  <div class="max-w-7xl mx-auto">
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-6 sm:gap-8">
+      
+      <div>
+        <h3 class="font-semibold mb-3 sm:mb-4 text-[16px] sm:text-lg">Savings account</h3>
+        <ul class="space-y-1 sm:space-y-2 text-[12px] sm:text-sm">
+          <li>Savings account</li>
+          <li>Fixed deposit account</li>
+          <li>Savings account for goals</li>
+          <li>Current account</li>
+          <li>Checkbook</li>
+          <li>Special personal account</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-3 sm:mb-4 text-[16px] sm:text-lg">Loan</h3>
+        <ul class="space-y-1 sm:space-y-2 text-[12px] sm:text-sm">
+          <li>Digital Loan</li>
+          <li>Business loan</li>
+          <li>Wing Digital Loan</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-3 sm:mb-4 text-[16px] sm:text-lg">Card</h3>
+        <ul class="space-y-1 sm:space-y-2 text-[12px] sm:text-sm">
+          <li>Wing Card Digital</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-3 sm:mb-4 text-[16px] sm:text-lg">Transfer money now</h3>
+        <ul class="space-y-1 sm:space-y-2 text-[12px] sm:text-sm">
+          <li>International money transfer services</li>
+          <li>Domestic money transfer</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-3 sm:mb-4 text-[16px] sm:text-lg">Immediate help</h3>
+        <ul class="space-y-1 sm:space-y-2 text-[12px] sm:text-sm">
+          <li>Meet with colleagues</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-3 sm:mb-4 text-[16px] sm:text-lg">Wing Bank app</h3>
+        <ul class="space-y-1 sm:space-y-2 text-[12px] sm:text-sm">
+          <li>About Ep</li>
+          <li>Pay the bill</li>
+          <li>Code number</li>
+          <li>QR scan</li>
+          <li>Wing Chat</li>
+          <li>Free withdrawal</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-3 sm:mb-4 text-[16px] sm:text-lg">Company</h3>
+        <ul class="space-y-1 sm:space-y-2 text-[12px] sm:text-sm">
+          <li>Promotion</li>
+          <li>Latest news</li>
+          <li>Credit rating</li>
+          <li>Annual report</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-3 sm:mb-4 text-[16px] sm:text-lg">What you need</h3>
+        <ul class="space-y-1 sm:space-y-2 text-[12px] sm:text-sm">
+          <li>Wing Points</li>
+          <li>The importance of finance</li>
+          <li>Moving forward</li>
+          <li>Comment</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-3 sm:mb-4 text-[16px] sm:text-lg">Self-service</h3>
+        <ul class="space-y-1 sm:space-y-2 text-[12px] sm:text-sm">
+          <li>Wing Bank ATM and CRM</li>
+          <li>Wing Bank Branch</li>
+          <li>Bakong ATM</li>
+          <li>Celebrating 17 years of Wing Company</li>
+          <li>Tourist program</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-3 sm:mb-4 text-[16px] sm:text-lg">Safety</h3>
+        <ul class="space-y-1 sm:space-y-2 text-[12px] sm:text-sm">
+          <li>Safety deposit box</li>
+          <li>Security or storage services</li>
+          <li>Security in card use</li>
+        </ul>
+      </div>
+
+    </div>
+
+
+    <div class="mt-16 sm:mt-20 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+
+      <div class="flex flex-col items-center lg:items-start">
+        <img src="/asset/wb-logo.svg" alt="Wing Bank Logo" 
+          class="h-[45px] sm:h-[55px] lg:h-[60px] mb-4 sm:mb-6">
+        
+        <p class="text-gray-300 text-center lg:text-left text-[12px] sm:text-sm">
+          Wing Tower, Monivong Boulevard (93), corner of Kampuchea Krom Boulevard (128), <br>
+          Village 6, Sangkat Monorom, Khan 7 Makara, Phnom Penh
+        </p>
+
+        <div class="mt-3 mb-4 sm:mb-4 text-[12px] sm:text-sm">
+          <span class="text-gray-400">Swift code </span>
+          <span class="text-blue-500 font-semibold">WIGCKHPP</span>
+        </div>
+
+        <img src="/asset/sisa-cert.png" alt="SISA Certification"
+          class="h-[35px] sm:h-[45px] lg:h-[50px] object-contain opacity-90 dark:invert">
+      </div>
+
+      <div class="hidden lg:flex gap-4 items-start">
+        <div class="w-[120px] md:w-[150px] lg:w-[180px] flex-shrink-0">
+          <img src="/asset/wing-qr.svg" alt="QR" class="w-full opacity-90 dark:invert">
+        </div>
+        <div class="text-left">
+          <h5 class="font-bold text-[16px] sm:text-xl mb-2">Financial transactions anywhere 24/7</h5>
+          <p class="text-gray-300 text-[12px] sm:text-sm max-w-md mb-3 sm:mb-4">
+            Download the Wing Bank app today for a 100% mobile banking experience. Available on both iOS and Android!
+          </p>
+          <div class="flex gap-2 sm:gap-3">
+            <img src="/asset/app-store.svg" class="h-[32px] sm:h-[40px] opacity-90 dark:invert">
+            <img src="/asset/google-play.svg" class="h-[32px] sm:h-[40px] opacity-90 dark:invert">
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:hidden flex flex-col items-center">
+        <p class="font-bold text-white text-[16px] sm:text-lg my-4">ដោនឡូតអេប Wing Bank ថ្ងៃនេះ!</p>
+        <div class="flex gap-2 sm:gap-3">
+          <img src="/asset/app-store.svg" class="h-[32px] sm:h-[40px] opacity-90 dark:invert">
+          <img src="/asset/google-play.svg" class="h-[32px] sm:h-[40px] opacity-90 dark:invert">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-8 flex justify-center lg:justify-start gap-3 sm:gap-4">
+      <a href="#" class="w-10 h-10 sm:w-12 sm:h-12 border-2 border-white rounded-xl flex items-center justify-center transition hover:bg-blue-600 hover:border-blue-600">
+        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>      </a>
+       <a href="#" class="w-10 h-10 sm:w-12 sm:h-12 border-2 border-white rounded-xl flex items-center justify-center transition hover:bg-blue-600 hover:border-blue-600">
+        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>      </a>
+    </div>
+    <div class="flex flex-col lg:flex-row justify-between items-center border-t border-gray-700 mt-8 pt-6 gap-4 lg:gap-0">
+      <p class="text-gray-400 text-[12px] sm:text-sm text-center lg:text-left">
+        © 2025 Wing Bank (Cambodia) Plc
+      </p>
+
+      <div class="flex flex-wrap justify-center items-center gap-2 sm:gap-3 text-[10px] sm:text-sm">
+        <a href="#" class="text-gray-400 hover:text-white">Refusal</a>
+        <span class="hidden sm:inline text-gray-600">|</span>
+        <a href="#" class="text-gray-400 hover:text-white">Term of use</a>
+        <span class="hidden sm:inline text-gray-600">|</span>
+        <a href="#" class="text-gray-400 hover:text-white">Cookie</a>
+        <span class="hidden sm:inline text-gray-600">|</span>
+        <a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a>
+        <span class="hidden sm:inline text-gray-600">|</span>
+        <a href="#" class="text-gray-400 hover:text-white">General Conditions</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
